@@ -25,4 +25,12 @@ public class Hisoka {
 		this.favoriteJutsu = favoriteJutsu;
 	}
 	
+	public void showDetails()
+	{
+		System.out.println("Detail Info of Hisoka :");
+		System.out.println("Main Jutsu : "+mainJutsu.getJutsuName()+", "+mainJutsu.getValue());
+		System.out.println("Secret Jutsu : "+secretJutsu.getJutsuName()+", "+secretJutsu.getValue());
+		System.out.println("Secret Jutsu : "+favoriteJutsu.getJutsuName()+", "+favoriteJutsu.getValue());		
+	}
+	
 }
