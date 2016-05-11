@@ -7,24 +7,27 @@
 
   <bean id="hisokaClass" class="hisokaSpring.Hisoka">
       <property name="mainJutsu" ref="jutsu1" />
-      <property name="secretJutsu" ref="jutsu2" />
-      <property name="favoriteJutsu" ref="jutsu3" />      
+      <property name="secretJutsu" >
+      	  <bean class="hisokaSpring.Jutsu">
+		      <property name="JutsuName" value="Amaterasu" />
+		      <property name="Value" value="97" />
+		  </bean>    
+      </property>      
+      <property name="favoriteJutsu" ref="jutsu3" /> 
+      
+      
   </bean>
     
   <bean id="jutsu1" class="hisokaSpring.Jutsu">
       <property name="JutsuName" value="FutonNoJutsu" />
       <property name="Value" value="87" />
-  </bean>
-
-  <bean id="jutsu2" class="hisokaSpring.Jutsu">
-      <property name="JutsuName" value="Amaterasu" />
-      <property name="Value" value="97" />
-  </bean>
+  </bean>  
   
   <bean id="jutsu3" class="hisokaSpring.Jutsu">
       <property name="JutsuName" value="RinneTenseiNoJutsu" />
       <property name="Value" value="99" />
   </bean>
   
+  <alias name="hisokaClass" alias="hisokaClass-alias"/>
   
   </beans>

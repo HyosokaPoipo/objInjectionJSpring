@@ -30,7 +30,7 @@ public class Hisoka {
 		System.out.println("Detail Info of Hisoka :");
 		System.out.println("Main Jutsu : "+mainJutsu.getJutsuName()+", "+mainJutsu.getValue());
 		System.out.println("Secret Jutsu : "+secretJutsu.getJutsuName()+", "+secretJutsu.getValue());
-		System.out.println("Secret Jutsu : "+favoriteJutsu.getJutsuName()+", "+favoriteJutsu.getValue());		
+		System.out.println("Favorite Jutsu : "+favoriteJutsu.getJutsuName()+", "+favoriteJutsu.getValue());		
 	}
 	
 }

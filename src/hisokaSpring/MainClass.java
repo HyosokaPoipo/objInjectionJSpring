@@ -10,7 +10,7 @@ public class MainClass {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("mySpring.xml");
 		
-		Hisoka myInjectedObject = (Hisoka) context.getBean("hisokaClass");
+		Hisoka myInjectedObject = (Hisoka) context.getBean("hisokaClass-alias");
 		
 		myInjectedObject.showDetails();
 	}
